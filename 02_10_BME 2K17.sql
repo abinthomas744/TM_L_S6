@@ -1,7 +1,25 @@
 create database BME02_10; 
 use BME02_10;
-create table studentinfo( Sname char(20),surnam char(20),father_name char(20),roll_no int(10),enroll_no int(10),gender char(6),email char(30),branch char(30),ph_no bigint(10),DOB int(8));
-create table facultyinfo( Fname char(20),subject1 char(25),subject2 char(25),ph_no int(15),branch char(10),email char(30));
+CREATE TABLE studentinfo (
+    Sname CHAR(20),
+    surnam CHAR(20),
+    father_name CHAR(20),
+    roll_no INT(10),
+    enroll_no INT(10),
+    gender CHAR(6),
+    email CHAR(30),
+    branch CHAR(30),
+    ph_no BIGINT(10),
+    DOB INT(8)
+);
+CREATE TABLE facultyinfo (
+    Fname CHAR(20),
+    subject1 CHAR(25),
+    subject2 CHAR(25),
+    ph_no INT(15),
+    branch CHAR(10),
+    email CHAR(30)
+);
 INSERT INTO studentinfo( Sname,surnam,father_name,roll_no,enroll_no,gender,email,branch,ph_no,DOB)
 VALUES('Amritmay','Biswas','Deepak Biswas',17111010,170111,'Male','amritcseb@gmail.com','Biomedical Engineering',8349423134,19071998)
 
